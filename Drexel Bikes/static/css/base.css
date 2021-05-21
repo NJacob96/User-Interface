@@ -1,0 +1,51 @@
+/* background color of the page is changes to white */
+body {
+    font-family: "Avenir";
+    font-size: 1rem;
+    background: #fff;
+}
+
+/* navigation bar header of the page is changes to blue */
+header {
+    background: #07294d;
+}
+
+.btn-primary {
+    background: #507C49;
+    border-color: #406C39;
+}
+
+/* navigation bar header of the page is changes to blue */
+.btn-primary:hover {
+    background: #608C59;
+    border-color: #406C39;
+}
+
+/* navigation bar tabs text changes to yellow */
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: #ffc600;
+}
+
+.content {
+    padding: 2rem 1.5rem;
+
+}
+
+.jumbotron {
+    padding: 1.5rem;
+    background: 0;
+
+}
+
+.jumbotron img {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* images in table in our Bikes section, the size is set to max width of 100px */
+.img-table {
+    max-width: 100px;
+}
+
+

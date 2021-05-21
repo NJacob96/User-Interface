@@ -1,0 +1,44 @@
+<!---
+#Nijo Jacob, nj398@drexel.edu
+#CS530: DUI, Assignment [1]
+!--->
+
+{% extends 'base.html' %}
+{% set active = "Bikes" %}
+
+{% block title %}
+Our Bikes
+{% endblock %}
+
+{% block content %}
+
+<!-- Heading !-->
+<h1>Our Bikes</h1>
+
+<!-- Bike content !-->
+<p>
+   We have the best selection of bikes around. Please see our selection below!
+</p>
+<!-- Bike Selection !-->
+<table class="table">
+	<tr>
+		<th>Image</th>
+		<th>Name</th>
+		<th>Wheels</th>
+        <th>Size</th>
+        <th>Motorized</th>
+        <th>Folding</th>
+	</tr>
+    {% for content in data.types %}
+	<tr>
+        <td><img class="img-table" src="/static/img/bikes/{{content.image}}"></td>
+        <td>{{ content.name }}</td>
+        <td>{{ content.wheels }}</td>
+        <td>{{ content.size }}</td>
+        <td>{{ content.motor }}</td>
+        <td>{{ content.folding }}</td>
+	</tr>
+    {% endfor %}
+</table>
+{% endblock %}
+
